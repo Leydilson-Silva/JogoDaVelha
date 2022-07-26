@@ -15,11 +15,19 @@ function jogada(evento) {
     let quadrado = evento.target;
     let posicao = quadrado.id;
 
-    if(movimento(posicao)){
-       
+    if (movimento(posicao)) {
+
 
         setTimeout(() => {
-            alert("O jogo acabou, o vencedor foi " + vezJogador)
+            if (vezJogador == 0) {
+
+                alert("O jogo acabou, o vencedor foi o primeiro Jogador")
+                
+
+            } else {
+                alert("O jogo acabou, o vencedor foi o segundo Jogador")
+            }
+
         }, 10);
     };
     proxJogada(posicao);

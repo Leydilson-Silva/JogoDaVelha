@@ -57,11 +57,10 @@ function vencedor() {
         if (tabuleiro[pos1] == tabuleiro[pos2] &&
             tabuleiro[pos1] == tabuleiro[pos3] &&
             tabuleiro[pos1] != '') {
-
+            
             return true;
         }
     }
 
     return false;
-} 
-
+}
